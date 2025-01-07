@@ -33,7 +33,7 @@ DEBUG = env('DEBUG')
 
 
 ALLOWED_HOSTS = [
-    'conf-three.vercel.app',
+    'conf-hazel.vercel.app',
     'hilarious-licorice-f66571.netlify.app',
 ]
 
@@ -47,13 +47,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app.apps.AppConfig',
-    'corsheaders'
+    'corsheaders',
 ]
 
 
 CORS_ALLOWED_ORIGINS = [
-    'https://hilarious-licorice-f66571.netlify.app/',
-    'https://conf-three.vercel.app/',
+    'https://hilarious-licorice-f66571.netlify.app',
+    'https://conf-hazel.vercel.app',
 ]
 
 MIDDLEWARE = [
