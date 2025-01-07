@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-from decouple import config
+import environ
 import os
 from pathlib import Path
 
@@ -20,8 +20,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 # Initialize environment variables handler
-SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
+# Initialize environment variables handler
+env = environ.Env(
+    DEBUG=(bool, False)  # Default DEBUG to False if not set
+)
+
+# Read .env file
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
+# Use environment variables
+SECRET_KEY = env('SECRET_KEY')
+DEBUG = env('DEBUG')
+
 
 
 ALLOWED_HOSTS = [
