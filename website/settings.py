@@ -33,7 +33,7 @@ DEBUG = env('DEBUG')
 
 
 ALLOWED_HOSTS = [
-    '.vercel.app',
+    'conf-kappa.vercel.app',
     'bejewelled-cuchufli-510a83.netlify.app',
 ]
 
@@ -51,11 +51,6 @@ INSTALLED_APPS = [
 ]
 
 
-CORS_ALLOWED_ORIGINS = [
-    'https://bejewelled-cuchufli-510a83.netlify.app',
-
-]
-
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware'
     'django.middleware.security.SecurityMiddleware',
@@ -68,6 +63,11 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    'https://bejewelled-cuchufli-510a83.netlify.app',
+    'https://conf-kappa.vercel.app',
+
+]
 
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
