@@ -32,7 +32,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
 
 
-ALLOWED_HOSTS = ['.vercel.app','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['.vercel.app','hilarious-licorice-f66571.netlify.app','localhost','127.0.0.1']
 
 
 # Application definition
@@ -50,7 +50,8 @@ INSTALLED_APPS = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    '.netlify.app',
+    'https://hilarious-licorice-f66571.netlify.app',
+
 ]
 
 MIDDLEWARE = [
