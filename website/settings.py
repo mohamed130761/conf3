@@ -25,7 +25,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 
 ALLOWED_HOSTS = [
-    'conf-gray.vercel.app',
+    'conf-kappa.vercel.app',
     'bejewelled-cuchufli-510a83.netlify.app',
 ]
 
