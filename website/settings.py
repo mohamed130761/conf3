@@ -52,9 +52,8 @@ INSTALLED_APPS = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    'https://hilarious-licorice-f66571.netlify.app',
-    'https://conf-3frny1uu7-mohamed-sayeds-projects-bd24495c.vercel.app'
-
+    'https://hilarious-licorice-f66571.netlify.app/',
+    'https://conf-three.vercel.app/',
 ]
 
 MIDDLEWARE = [
