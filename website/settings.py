@@ -33,8 +33,8 @@ DEBUG = env('DEBUG')
 
 
 ALLOWED_HOSTS = [
-    'conf-hazel.vercel.app',
-    'hilarious-licorice-f66571.netlify.app',
+    '.vercel.app',
+    '.netlify.app',
 ]
 
 # Application definition
@@ -52,8 +52,8 @@ INSTALLED_APPS = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    'https://hilarious-licorice-f66571.netlify.app',
-    'https://conf-hazel.vercel.app',
+    'https://.netlify.app',
+
 ]
 
 MIDDLEWARE = [
