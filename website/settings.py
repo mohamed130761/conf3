@@ -34,7 +34,7 @@ DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = [
     '.vercel.app',
-    '.netlify.app',
+    'bejewelled-cuchufli-510a83.netlify.app',
 ]
 
 # Application definition
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    'https://.netlify.app',
+    'https://bejewelled-cuchufli-510a83.netlify.app',
 
 ]
 
