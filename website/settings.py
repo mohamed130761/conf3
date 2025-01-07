@@ -25,7 +25,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 
 ALLOWED_HOSTS = [
-    '.vercel.app',
+    'conf3.vercel.app',
     'aesthetic-madeleine-128cc0.netlify.app',
 ]
 
@@ -56,7 +56,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://aesthetic-madeleine-128cc0.netlify.app',
+    'https://aesthetic-madeleine-128cc0.netlify.app/',
+    'https://conf3.vercel.app/',
 
 ]
 
