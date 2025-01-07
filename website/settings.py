@@ -25,8 +25,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 
 ALLOWED_HOSTS = [
-    'conf-kappa.vercel.app',
-    'bejewelled-cuchufli-510a83.netlify.app',
+    '.vercel.app',
+    'aesthetic-madeleine-128cc0.netlify.app',
 ]
 
 # Application definition
@@ -56,8 +56,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://bejewelled-cuchufli-510a83.netlify.app',
-    'https://conf-gray.vercel.app',
+    'https://aesthetic-madeleine-128cc0.netlify.app',
 
 ]
 
